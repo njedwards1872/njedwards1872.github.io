@@ -8,9 +8,9 @@ flowchart TD
     E@{ shape: lean-r, label: "Input UserGuess" } -->
     F@{ shape: hex, label: "UserGuess <> SecretNumber" } -->  G{"UserGuess < SecretNumber"} -->
     H -- Yes --> I["Output too low"]
-    I --> J[Rethink]
-    J --> F
-    G -- No ---->
+    G{"UserGuess < SecretNumber"} -->K{"UserGuess > SecretNumber"} -->
+    L -- Yes --> M["Output too high"]
+    
  End([End])
 ```
 
