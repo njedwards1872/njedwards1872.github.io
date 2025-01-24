@@ -2,7 +2,9 @@
 flowchart TD
  Start([Start]) --> 
     A@{ shape: subproc, label: "IntegerSecretNumber" } -->
-    B@{ shape: subproc, label: "IntegerUserGuess" }
+    B@{ shape: subproc, label: "IntegerUserGuess" } -->
+    C@{ shape: subproc, label: "SecretNumber = Random (10)" }
+
 
  End([End])
 ```
