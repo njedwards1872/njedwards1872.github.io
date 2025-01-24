@@ -6,7 +6,7 @@ flowchart TD
     C@{ shape: subproc, label: "SecretNumber = Random (10)" } --> 
     D@{ shape: lean-r, label: "Output please enter a number between 0 and 9" } -->
     E@{ shape: lean-r, label: "Input UserGuess" } -->
-    F@{ shape: hex, label: "UserGuess <> SecretNumber" } -->  G{"UserGuess<SecretNumber"} -->
+    F@{ shape: hex, label: "UserGuess <> SecretNumber" } -->  G{"UserGuess < SecretNumber"} -->
     H -- Yes --> I["Output too low"]
     I --> J[Rethink]
     J --> F
