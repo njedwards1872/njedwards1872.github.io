@@ -9,7 +9,7 @@ flowchart TD
     F@{ shape: hex, label: "UserGuess <> SecretNumber" }--> G{"UserGuess < SecretNumber"} -->
     True -- Yes --> I["too low"] -->N
     G{"UserGuess < SecretNumber"} -->K{"UserGuess > SecretNumber"} -->
-    False -- Yes --> M["too high"] -->N
+    True -- Yes --> M["too high"] -->N
     F ---->|No| P[End]
    
     N@{ shape: lean-r, label: "Please enter a number between 0 and 9" } --> O@{ shape: lean-r, label: "Input UserGuess" } -->F
