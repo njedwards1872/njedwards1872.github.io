@@ -12,6 +12,7 @@ flowchart TD
     L -- Yes --> M["too high"] -->N
    
     N@{ shape: lean-r, label: "Please enter a number between 0 and 9" } --> O@{ shape: lean-r, label: "Input UserGuess" } -->F
+    P@{ shape: lean-r, label: "Correct. Thanks for playing" } -->
 
  End([End])
 ```
