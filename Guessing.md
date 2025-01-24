@@ -1,4 +1,4 @@
-```mermaid
+
 flowchart TD
     Start([Start]) --> DeclareVariables[/Declare Integer SecretNumber, UserGuess/]
     DeclareVariables --> GenerateSecretNumber[/Generate SecretNumber = Random(10)/]
@@ -16,7 +16,7 @@ flowchart TD
     OutputTooLow --> Reprompt([Output: "Please enter a number between 0 and 9"])
     OutputTooHigh --> Reprompt
     Reprompt --> GetUserInput
-End([End])```
+
 
 
 
